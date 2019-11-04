@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'my_histories/index'
+
+  devise_for :users, controllers: {
+         registrations: 'users/registrations'
+       }
   resources :histories
 
   root "histories#index"

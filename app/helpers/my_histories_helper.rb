@@ -1,0 +1,2 @@
+module MyHistoriesHelper
+end
